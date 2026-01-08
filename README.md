@@ -1,72 +1,71 @@
-# AutoQuant: Crypto Perpetual Futures Infrastructure
+# AutoQuant: The Auditable Logic Layer for Injective AI Agents
 
-![Status](https://img.shields.io/badge/Status-Private_Implementation-critical)
-![Research](https://img.shields.io/badge/Research-ESWA%20%2F%20KBS-blue)
-![License](https://img.shields.io/badge/Copyright-All_Rights_Reserved-red)
+![Status](https://img.shields.io/badge/Status-Hackathon_Build-success)
+![Research](https://img.shields.io/badge/Research-ESWA%20(Under_Review)-blue)
+![Integration](https://img.shields.io/badge/Integration-ElizaOS_x_Injective-purple)
 
-> **⚠️ ACCESS NOTICE:**
-> **Core implementation is PRIVATE.** This repository is a **documentation-only portfolio** demonstrating engineering standards and architectural principles. It does **NOT** contain runnable strategies, backtesting engines, or proprietary alpha factors.
+> **🚀 Injective x ElizaOS Hackathon Entry**
+> **"Making AI Agents Auditable Again."**
 
 ---
 
-## 🏆 WEEX AI Wars Entry: AlphaGuardian
+## 💡 Project Concept: The "Cortex" for Trading Agents
 
-This repository serves as the **conceptual and engineering framework** for the project **"AlphaGuardian"**, submitted to the **WEEX AI Wars Hackathon**.
+Most AI Agents on ElizaOS trade blindly—they hallucinate profits because they ignore **slippage**, **funding rates**, and **look-ahead bias**.
 
-* **Submission Focus**: **Auditable AI Strategy & Risk Governance**.
-* **Key Innovation**: Implementing the **STRICT T+1 Protocol** (derived from my **ESWA** research) to eliminate look-ahead bias in high-frequency crypto trading.
-* **Live Demo**: Please refer to the video submission/demo link provided in the DoraHacks platform.
+**AutoQuant** acts as the **risk-control layer (The Cortex)** for Injective-based agents. Before an Agent executes a trade on Injective, AutoQuant validates the logic against rigorous historical data and real-time cost models.
+
+* **Problem:** "Garbage In, Garbage Out" strategies in current AI Agents.
+* [cite_start]**Solution:** An **Auditable Expert System** [cite: 2, 42] that enforces strict execution semantics and cost accounting.
+* **Core Tech:** Based on my research submitted to **Expert Systems with Applications (ESWA)**.
 
 ---
 
 ## 🔗 Key Resources
 
-* **📄 Research Preprint (ESWA)**: [https://doi.org/10.48550/arXiv.2512.22476](https://doi.org/10.48550/arXiv.2512.22476)
-  * *Status: Preprint available (Submitted to Expert Systems with Applications).*
-* **⚖️ Governance Logic (KBS)**: *Private / Under Review (Submitted to Knowledge-Based Systems)*
-  * *See "Engineering Capabilities" below for the implemented logic.*
-* **👨‍💻 Resume (CV)**: [`resume/CV.pdf`](resume/CV.pdf)
+* [cite_start]**📄 Core Research (Preprint)**: [**AutoQuant: An Auditable Expert-System Framework** (arXiv:2512.22476)](https://doi.org/10.48550/arXiv.2512.22476) [cite: 4]
+    * *Validates the mathematical rigor behind the codebase.*
+* **👨‍💻 Developer**: Kaihong Deng (Solo Developer)
 * **📧 Contact**: [kh.deng@foxmail.com](mailto:kh.deng@foxmail.com)
 
 ---
 
-## 🛠 Engineering Capabilities (High-Level)
+## 🛠 Hackathon Deliverables
 
-Derived from academic research and industrial practice, focusing on **Auditability** and **Robustness**:
+This repository demonstrates how **AutoQuant** integrates with **ElizaOS** to protect Injective users:
 
-* **Strict T+1 Semantics (Source: ESWA Preprint)**:
-    * Rigid separation of `Generation (t)` and `Execution (t+1)` to enforce no-lookahead constraints.
-    * Semantic validators to reject any signal leaking future information.
-* **Knowledge-Driven Governance (Source: KBS Submission)**:
-    * **Live Guard**: Real-time monitoring of "Semantic Drift" between backtest and live execution.
-    * **Autonomous Kill-Switch**: Pre-defined logic to halt trading when statistical properties deviate from the baseline.
-* **High-Fidelity Cost Simulation**:
-    * Accounting for **Tiered Fees**, **Dynamic Slippage** (Volatility-aware), and **Funding Rates**.
+### 1. The "Reality Check" Plugin
+[cite_start]A plugin for ElizaOS that enforces **Strict T+1 Execution Semantics**[cite: 294].
+* **Function:** Prevents Agents from using future data (look-ahead bias).
+* **Impact:** Ensures that if an Agent says "I made 50% profit," it is mathematically strictly verified, not hallucinated.
 
----
+### [cite_start]2. The "Kill-Switch" Guard [cite: 356, 357]
+A post-deployment supervisor module.
+* **Logic:** Monitors the Agent's live performance on Injective.
+* **Action:** Automatically triggers a **"Kill" signal** (halts trading) if live PnL deviates significantly from the backtest baseline or hits a drawdown limit.
 
-## 📦 Delivered Modules & Scopes
-
-*While the core engine is private, the following modules represent my standard for deliverable engineering:*
-
-1.  **Slippage Model Upgrade**: Spread/Volume-aware models with unit tests and calibration reports.
-2.  **Audit Accounting System**: Granular breakdown of PnL (Fees vs. Slippage vs. Funding) for sensitivity analysis.
-3.  **Robust Evaluation Tooling**: Walk-forward validation pipelines and ranking export utilities.
-4.  **Semantic Validators**: Automated checks for data alignment and signal integrity.
+### [cite_start]3. Injective Cost-Awareness [cite: 538]
+* **Model:** Incorporates Injective-specific **Funding Rates** and **Taker Fees** into the Agent's decision loop.
+* **Result:** Filters out high-frequency strategies that only work in zero-fee environments.
 
 ---
 
-## ✅ Engagement & Acceptance Standard
+## 🔬 Research-Driven Engineering
 
-* **Defined Scope**: Clear acceptance criteria established before implementation.
-* **Verifiable Evidence**: Reproducible verification instructions and test reports accompanying all deliverables.
-* **Rollback-Friendly**: Minimal invasive changes with atomic commits.
+This project is not just a hackathon demo; it is an implementation of academic research on **Backtest-to-Live Consistency**:
+
+| Feature | Scientific Basis (ESWA) |
+| :--- | :--- |
+| **No Look-Ahead** | [cite_start]Strict separation of Generation ($t$) and Execution ($t+1$)[cite: 296]. |
+| **Cost Realism** | [cite_start]Full accounting of fees, slippage, and funding rates[cite: 308]. |
+| **Auditability** | [cite_start]Deterministic machine-readable artifacts for every decision[cite: 45]. |
 
 ---
 
-## ⚖️ Verification & IP
+## ⚠️ Access & License
 
-* **Non-Executable**: This portfolio is intentionally designed as a static showcase. For public technical details, please refer to the linked **ESWA Preprint**.
-* **Private Demo**: Private implementation walk-throughs or additional verification evidence can be provided upon request for potential employers or collaborators.
+* **Open Source Components:** The ElizaOS adapter/plugin and validation logic logic are open for the hackathon judges.
+* **Core Engine:** The underlying Bayesian optimization engine is proprietary IP.
+* **Verification:** Full reproducibility scripts for the paper's results are available upon request.
 
 **Copyright (c) 2026 Kaihong Deng. All rights reserved.**
