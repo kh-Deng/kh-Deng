@@ -1,71 +1,72 @@
-# AutoQuant: The Auditable Logic Layer for Injective AI Agents
+# AlphaGuardian (AutoQuant)
 
-![Status](https://img.shields.io/badge/Status-Hackathon_Build-success)
-![Research](https://img.shields.io/badge/Research-ESWA%20(Under_Review)-blue)
-![Integration](https://img.shields.io/badge/Integration-ElizaOS_x_Injective-purple)
+### The Verifiable Risk & Logic Layer for Agentic Finance
 
-> **🚀 Injective x ElizaOS Hackathon Entry**
-> **"Making AI Agents Auditable Again."**
+**AlphaGuardian** (formerly AutoQuant) is an auditable expert-system framework designed to bridge the gap between "hallucinated alpha" and "verifiable execution" in AI-driven trading. It provides a deterministic **Logic Guard** for autonomous agents, ensuring every trade is mathematically validated against look-ahead bias and execution realism.
 
 ---
 
-## 💡 Project Concept: The "Cortex" for Trading Agents
+## 🛡️ Why AlphaGuardian?
 
-Most AI Agents on ElizaOS trade blindly—they hallucinate profits because they ignore **slippage**, **funding rates**, and **look-ahead bias**.
+Most AI Agents operate in a **"Black Box"**: they hallucinate profits by ignoring market friction or using future data. **AlphaGuardian** acts as the **Pre-frontal Cortex** for these agents, enforcing strict risk-control and logic-consistency.
 
-**AutoQuant** acts as the **risk-control layer (The Cortex)** for Injective-based agents. Before an Agent executes a trade on Injective, AutoQuant validates the logic against rigorous historical data and real-time cost models.
+### Core Capabilities:
 
-* **Problem:** "Garbage In, Garbage Out" strategies in current AI Agents.
-* [cite_start]**Solution:** An **Auditable Expert System** [cite: 2, 42] that enforces strict execution semantics and cost accounting.
-* **Core Tech:** Based on my research submitted to **Expert Systems with Applications (ESWA)**.
-
----
-
-## 🔗 Key Resources
-
-* [cite_start]**📄 Core Research (Preprint)**: [**AutoQuant: An Auditable Expert-System Framework** (arXiv:2512.22476)](https://doi.org/10.48550/arXiv.2512.22476) [cite: 4]
-    * *Validates the mathematical rigor behind the codebase.*
-* **👨‍💻 Developer**: Kaihong Deng (Solo Developer)
-* **📧 Contact**: [kh.deng@foxmail.com](mailto:kh.deng@foxmail.com)
-
----
-
-## 🛠 Hackathon Deliverables
-
-This repository demonstrates how **AutoQuant** integrates with **ElizaOS** to protect Injective users:
-
-### 1. The "Reality Check" Plugin
-[cite_start]A plugin for ElizaOS that enforces **Strict T+1 Execution Semantics**[cite: 294].
-* **Function:** Prevents Agents from using future data (look-ahead bias).
-* **Impact:** Ensures that if an Agent says "I made 50% profit," it is mathematically strictly verified, not hallucinated.
-
-### [cite_start]2. The "Kill-Switch" Guard [cite: 356, 357]
-A post-deployment supervisor module.
-* **Logic:** Monitors the Agent's live performance on Injective.
-* **Action:** Automatically triggers a **"Kill" signal** (halts trading) if live PnL deviates significantly from the backtest baseline or hits a drawdown limit.
-
-### [cite_start]3. Injective Cost-Awareness [cite: 538]
-* **Model:** Incorporates Injective-specific **Funding Rates** and **Taker Fees** into the Agent's decision loop.
-* **Result:** Filters out high-frequency strategies that only work in zero-fee environments.
+* **Strict T+1 Execution Semantics**: Eliminates look-ahead bias by enforcing a formal separation between signal generation () and execution ().
+* **Semantic Fault Injection (SFI)**: Proactively stress-tests agent logic by injecting "synthetic failures" (e.g., stale data, funding rate spikes) to verify agent resilience.
+* **Cost-Aware Verification**: Full accounting of slippage, taker fees, and funding rates—turning theoretical "paper trading" into production-ready strategies.
+* **Deterministic Audit Trails**: Generates machine-readable evidence for every decision, making AI actions auditable for DAOs, funds, and retail users.
 
 ---
 
 ## 🔬 Research-Driven Engineering
 
-This project is not just a hackathon demo; it is an implementation of academic research on **Backtest-to-Live Consistency**:
+The framework is the practical implementation of my research submitted to **Expert Systems with Applications (ESWA)**:
 
-| Feature | Scientific Basis (ESWA) |
-| :--- | :--- |
-| **No Look-Ahead** | [cite_start]Strict separation of Generation ($t$) and Execution ($t+1$)[cite: 296]. |
-| **Cost Realism** | [cite_start]Full accounting of fees, slippage, and funding rates[cite: 308]. |
-| **Auditability** | [cite_start]Deterministic machine-readable artifacts for every decision[cite: 45]. |
+> **AutoQuant: An Auditable Expert-System Framework for Financial Strategy Verification**.
+
+| Feature | Technical Implementation |
+| --- | --- |
+| **Logic Guarding** | Intercepts agent signals and validates them against an **Auditable Expert System**. |
+| **Backtest Consistency** | Ensures 1:1 parity between simulation and live execution through **Strict Semantics**. |
+| **Kill-Switch Guard** | A supervisor module that halts trading if live performance deviates from the Bayesian baseline. |
 
 ---
 
-## ⚠️ Access & License
+## 🧩 Ecosystem Integration
 
-* **Open Source Components:** The ElizaOS adapter/plugin and validation logic logic are open for the hackathon judges.
-* **Core Engine:** The underlying Bayesian optimization engine is proprietary IP.
-* **Verification:** Full reproducibility scripts for the paper's results are available upon request.
+While chain-agnostic, AlphaGuardian provides ready-to-use adapters for:
 
-**Copyright (c) 2026 Kaihong Deng. All rights reserved.**
+* **AI Frameworks**: ElizaOS (Plugin-ready), custom AI Agents.
+* **Infrastructure**: Injective (DEX/Perps), dYdX (v4 Support), Arbitrum ecosystem.
+
+---
+
+## 📂 Project Structure & Showcase
+
+* `/core_engine`: Proprietary Bayesian optimization and logic validation engine. (Closed Source)
+* `/plugin_eliza`: An open-source adapter allowing ElizaOS agents to call `Guardian.check()` before execution.
+* `/showcase`:
+* `run_demo.py`: Reproducible script demonstrating the **Kill-Switch** in action.
+* `exports/latest/report.html`: A sample of the **Auditable Decision Certificate** generated by the system.
+
+
+
+---
+
+## 📬 Contact & Collaboration
+
+I am open to collaborations with **Foundations (Grants)** and **Quantitative Funds** looking to secure their Agentic Finance stack.
+
+* **Developer**: **Kaihong Deng (邓觉眠)**
+* **Role**: Independent Researcher / Solo Developer
+* **Email**: [kh.deng@foxmail.com](mailto:kh.deng@foxmail.com)
+* **Location**: Dongguan, China
+
+---
+
+## ⚠️ License
+
+* **Core Engine**: Proprietary IP. Copyright (c) 2026 Kaihong Deng.
+* **Hackathon/Open Components**: Licensed under [MIT/Apache 2.0] for integration testing.
+
